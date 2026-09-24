@@ -43,7 +43,7 @@ def test_post_finds_the_category_and_sends_title_and_body(monkeypatch):
     def fake_run(cmd, capture_output, text, check):
         calls.append(cmd)
         if "createDiscussion" in cmd[4]:
-            out = {"data": {"createDiscussion": {"discussion": {"url": "https://github.com/alinaschanz/gasweek/discussions/9"}}}}
+            out = {"data": {"createDiscussion": {"discussion": {"url": "https://github.com/AlinaSchan/gasweek/discussions/9"}}}}
         else:
             nodes = [{"id": "C_qa", "slug": "q-a"}, {"id": "C_gen", "slug": "general"}]
             out = {"data": {"repository": {"id": "R_1", "discussionCategories": {"nodes": nodes}}}}

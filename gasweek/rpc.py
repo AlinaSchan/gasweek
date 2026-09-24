@@ -12,7 +12,7 @@ DEFAULT_RPCS = (
     "https://gateway.tenderly.co/public/mainnet",
     "https://eth-mainnet.public.blastapi.io",
 )
-USER_AGENT = "gasweek/0.1 (+https://github.com/alinaschanz/gasweek)"
+USER_AGENT = "gasweek/0.1 (+https://github.com/AlinaSchan/gasweek)"
 
 
 class RpcError(Exception):

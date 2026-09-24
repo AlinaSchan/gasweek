@@ -1,11 +1,11 @@
 # gasweek
 
-[![ci](https://github.com/alinaschanz/gasweek/actions/workflows/ci.yml/badge.svg)](https://github.com/alinaschanz/gasweek/actions/workflows/ci.yml)
-[![daily snapshot](https://github.com/alinaschanz/gasweek/actions/workflows/daily.yml/badge.svg)](https://github.com/alinaschanz/gasweek/actions/workflows/daily.yml)
+[![ci](https://github.com/AlinaSchan/gasweek/actions/workflows/ci.yml/badge.svg)](https://github.com/AlinaSchan/gasweek/actions/workflows/ci.yml)
+[![daily snapshot](https://github.com/AlinaSchan/gasweek/actions/workflows/daily.yml/badge.svg)](https://github.com/AlinaSchan/gasweek/actions/workflows/daily.yml)
 ![python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776ab)
 ![license mit](https://img.shields.io/badge/license-MIT-2b7a74)
-[![release](https://img.shields.io/github/v/release/alinaschanz/gasweek?color=2b7a74)](https://github.com/alinaschanz/gasweek/releases)
-[![openssf scorecard](https://api.scorecard.dev/projects/github.com/alinaschanz/gasweek/badge)](https://scorecard.dev/viewer/?uri=github.com/alinaschanz/gasweek)
+[![release](https://img.shields.io/github/v/release/AlinaSchan/gasweek?color=2b7a74)](https://github.com/AlinaSchan/gasweek/releases)
+[![openssf scorecard](https://api.scorecard.dev/projects/github.com/AlinaSchan/gasweek/badge)](https://scorecard.dev/viewer/?uri=github.com/AlinaSchan/gasweek)
 
 when is ethereum cheapest? the base fee of every block in the last week, binned by hour
 of day and by weekday, as a table and as an svg. from `eth_feeHistory` on a public rpc,
@@ -67,7 +67,7 @@ the berlin night, and even then the whole range sits under a quarter of a gwei.
 ## install
 
 ```
-pipx install git+https://github.com/alinaschanz/gasweek
+pipx install git+https://github.com/AlinaSchan/gasweek
 ```
 
 or clone it and run `python -m gasweek` from the folder. python 3.10 or newer, no dependencies.
@@ -115,13 +115,13 @@ blob fee. columns are described in [data/README.md](data/README.md). it starts o
 --summary-append` reproduces a row from any node that still serves the history.
 
 every monday morning a workflow posts the week as a
-[discussion](https://github.com/alinaschanz/gasweek/discussions): the seven daily rows and the
+[discussion](https://github.com/AlinaSchan/gasweek/discussions): the seven daily rows and the
 hour-of-day table from a fresh run. `.github/scripts/weekly_report.py` is the whole of it.
 
 ## see also
 
-- [onchain-notes](https://github.com/alinaschanz/onchain-notes): `gas_now.py`, the same fee market as a cost per action, right now
-- [bigmoves](https://github.com/alinaschanz/bigmoves), [stablepeg](https://github.com/alinaschanz/stablepeg), [ens-lookup](https://github.com/alinaschanz/ens-lookup)
+- [onchain-notes](https://github.com/AlinaSchan/onchain-notes): `gas_now.py`, the same fee market as a cost per action, right now
+- [bigmoves](https://github.com/AlinaSchan/bigmoves), [stablepeg](https://github.com/AlinaSchan/stablepeg), [ens-lookup](https://github.com/AlinaSchan/ens-lookup)
 - the notes: [alinaschanz.life](https://alinaschanz.life), the short version on [x](https://x.com/alinaschanz)
 
 ## verify a release
@@ -131,7 +131,7 @@ opentimestamps proof of that file, and a build provenance attestation made in gi
 flow. with the files downloaded into one folder:
 
     sha256sum -c SHA256SUMS
-    gh attestation verify ./*.whl --owner alinaschanz
+    gh attestation verify ./*.whl --owner AlinaSchan
     ots verify SHA256SUMS.ots
 
 the attestation names the commit and the workflow run that produced the file; the timestamp proves
