@@ -3,7 +3,7 @@ name: pypi
 # on a published github release, when the repository variable PYPI_TRUSTED_PUBLISHING is "yes":
 # build the sdist and the wheel, check them, upload to pypi through trusted publishing (github
 # hands pypi a short-lived oidc token; no password and no api token is stored anywhere).
-# until the variable is set the job is skipped and `pipx install git+https://github.com/alinaschanz/gasweek`
+# until the variable is set the job is skipped and `pipx install git+https://github.com/AlinaSchan/gasweek`
 # stays the way in. the release workflow next to this one keeps attaching the files to the release.
 
 on:

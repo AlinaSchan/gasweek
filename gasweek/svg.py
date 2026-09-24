@@ -123,7 +123,7 @@ def render(rows: list[BlockFee], tz_hours: float = 0.0, title: str | None = None
                     out.append(f"<text x='{bx0 - 8}' y='{y + 4:.1f}' font-size='11' text-anchor='end' fill='{MUTED}'>{gwei(tick)}</text>")
             bline = " ".join(f"{xx(t):.1f},{by(median(v)):.1f}" for t, v in bbuckets)
             out.append(f"<polyline points='{bline}' fill='none' stroke='{ACCENT}' stroke-width='1.6' opacity='0.85'/>")
-    credit = source or "source: eth_feeHistory from a public rpc, github.com/alinaschanz/gasweek"
+    credit = source or "source: eth_feeHistory from a public rpc, github.com/AlinaSchan/gasweek"
     out.append(f"<text x='24' y='{height - 12}' font-size='11' fill='{MUTED}'>{_esc(credit)}</text>")
     out.append("</svg>")
     return "\n".join(out)

@@ -21,10 +21,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/alinaschanz/gasweek"
+Homepage = "https://github.com/AlinaSchan/gasweek"
 Author = "https://alinaschanz.life"
-Issues = "https://github.com/alinaschanz/gasweek/issues"
-Changelog = "https://github.com/alinaschanz/gasweek/blob/main/CHANGELOG.md"
+Issues = "https://github.com/AlinaSchan/gasweek/issues"
+Changelog = "https://github.com/AlinaSchan/gasweek/blob/main/CHANGELOG.md"
 
 [project.scripts]
 gasweek = "gasweek.cli:main"

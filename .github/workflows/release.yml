@@ -1,10 +1,10 @@
 name: release
 
 # on a published github release: build the sdist and the wheel and attach them to it.
-# nothing is uploaded to pypi; `pipx install git+https://github.com/alinaschanz/gasweek` is the way in.
+# nothing is uploaded to pypi; `pipx install git+https://github.com/AlinaSchan/gasweek` is the way in.
 
 # next to the two files: `SHA256SUMS`, an opentimestamps proof of it, and a build provenance
-# attestation signed by github for this workflow run (`gh attestation verify <file> --owner alinaschanz`).
+# attestation signed by github for this workflow run (`gh attestation verify <file> --owner AlinaSchan`).
 
 on:
   release:

@@ -10,7 +10,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-OWNER, REPO, CATEGORY = "alinaschanz", "gasweek", "general"
+OWNER, REPO, CATEGORY = "AlinaSchan", "gasweek", "general"
 
 
 def gwei(text: str) -> str:
